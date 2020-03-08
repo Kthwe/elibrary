@@ -1,0 +1,38 @@
+.thesis-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+.thesis_form{
+    padding: 5%;
+    background: #0062cc;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.thesis_form h3{
+    text-align: center;
+    color: #fff;
+}
+.thesis-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+
+.thesis_form .btnSubmit{
+    font-weight: 600;
+    color: #0062cc;
+    background-color: #fff;
+}
+.thesis_form .ForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}

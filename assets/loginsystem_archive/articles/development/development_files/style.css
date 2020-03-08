@@ -1,0 +1,96 @@
+sup {
+	top: -0.4em;
+	vertical-align: baseline;
+	position: relative;
+}
+sub {
+	top: 0.4em;
+	vertical-align: baseline;
+	position: relative;
+}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+@media screen and (min-device-pixel-ratio:0), (-webkit-min-device-pixel-ratio:0), (min--moz-device-pixel-ratio: 0) {.stl_view{ font-size:10em; transform:scale(0.1); -moz-transform:scale(0.1); -webkit-transform:scale(0.1); -moz-transform-origin:top left; -webkit-transform-origin:top left; } }
+.layer { }.ie { font-size: 1pt; }
+.ie body { font-size: 12em; }
+.stl_01 {
+	position: absolute;
+	white-space: nowrap;
+}
+.stl_02 {
+	height: 70.08334em;
+	font-size: 1em;
+	margin: 0em;
+	line-height: 0.0em;
+	display: block;
+	border-style: none;
+	width: 49.58333em;
+}
+
+@supports(-ms-ime-align:auto) { .stl_02 {overflow: hidden;}}
+.stl_03 {
+	position: relative;
+	width: 49.58333em;
+}
+.stl_04 {
+	height: 7.008333em;
+}
+.ie .stl_04 {
+	height: 70.08334em;
+}
+@font-face {
+	font-family:"TEBGLU+TimesNewRomanPSMT";
+	src:url("87c02bed-0000-0000-0000-000000000000.woff") format("woff");
+}
+.stl_05 {
+	font-size: 1.166667em;
+	font-family: "TEBGLU+TimesNewRomanPSMT";
+	color: #000000;
+}
+.stl_06 {
+	line-height: 1.107422em;
+}
+.stl_07 {
+	letter-spacing: 0em;
+}
+
+.ie .stl_07 {
+	letter-spacing: 0px;
+}
+@font-face {
+	font-family:"BEITIN+TimesNewRomanPS-BoldMT";
+	src:url("ea112ad2-0001-0000-0000-000000000000.woff") format("woff");
+}
+.stl_08 {
+	font-size: 1.333333em;
+	font-family: "BEITIN+TimesNewRomanPS-BoldMT";
+	color: #000000;
+}
+@font-face {
+	font-family:"NWWBCP+TimesNewRomanPS-ItalicMT";
+	src:url("00ff82f4-0002-0000-0000-000000000000.woff") format("woff");
+}
+.stl_09 {
+	font-size: 1.333333em;
+	font-family: "NWWBCP+TimesNewRomanPS-ItalicMT";
+	color: #000000;
+}
+.stl_10 {
+	font-size: 1.333333em;
+	font-family: "TEBGLU+TimesNewRomanPSMT";
+	color: #000000;
+}
+.stl_11 {
+	letter-spacing: 0.0001em;
+}
+
+.ie .stl_11 {
+	letter-spacing: 0.0011px;
+}
+.stl_12 {
+	letter-spacing: 0.0002em;
+}
+
+.ie .stl_12 {
+	letter-spacing: 0.0036px;
+}
