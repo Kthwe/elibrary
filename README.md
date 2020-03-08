@@ -1,1 +1,2 @@
 # elibrary
+This Project is related to e-library. It is currently in developing stage. It is totally free for those wh want to adapt for their specific need. The code is not finished yet. It is still raw satge. They haven't linked as they are supposed to be. -Best Regards, Aung Ye Thway
