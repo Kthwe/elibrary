@@ -45,7 +45,7 @@ if(isset($_POST['signup']))
 		$enc_password = md5($password1);
 		$msg=mysqli_query($con,"insert into users(fname,lname,email,password,contactno,student_id,user_email_status) values('$fname','$lname','$email','$enc_password','$contact','$student_id','not verified')");
 		if($msg){
-		header("location:http://localhost/dashboard/assets/loginsystem2/otp/");
+		header("location:http://localhost/dashboard/elibrary/assets/loginsystem2/otp/");
 		}
 	}
 }

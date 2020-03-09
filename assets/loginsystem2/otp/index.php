@@ -6,6 +6,11 @@ if(!empty($_POST["submit_email"])) {
 	$result = mysqli_query($conn,"SELECT * FROM users WHERE email='" . $_POST["email"] . "'");
 	$count  = mysqli_num_rows($result);
 	if($count>0) {
+		$validy = mysqli_query($conn,"SELECT * FROM users WHERE email='" . $_POST["email"] . "' AND user_email_status = 'verified'");
+		$vCount  = mysqli_num_rows($validy);
+		if($vCount>0){
+			$error_message = "Email is already verified";
+		}else{
 		// generate OTP
 		$otp = rand(100000,999999);
 		// Send OTP
@@ -16,7 +21,7 @@ if(!empty($_POST["submit_email"])) {
 			if($result > 0) {
 				$success=1;
 			}
-		}
+		}}
 	} else {
 		$error_message = "Email not exists!";
 	}
@@ -29,7 +34,12 @@ if(!empty($_POST["submit_otp"])) {
 		{
 			if($row['user_email_status'] == 'not verified'){
 			$result = mysqli_query($conn,"UPDATE users SET user_email_status = 'verified'  WHERE otp = '" . $_POST["otp"] . "'");
-			$success = 2;
+			if($result){
+				$result = mysqli_query($conn,"UPDATE users SET otp=NULL WHERE otp = '" . $_POST["otp"] . "'");
+				$success = 2;
+			}else{
+				$error_message = "Failed to delete OTP!";
+			}
 			}
 			else{
 				echo "email is already verified.";
@@ -41,9 +51,9 @@ if(!empty($_POST["submit_otp"])) {
 	}	
 }
 if(!empty($_POST["time_out"])) {
-	$result = mysqli_query($conn,"UPDATE users SET otp = '' WHERE  email= '" . $_POST["email"] . "'");
+
 	$error_message = "OTP Time Out!";
-	header('location: http://localhost/dashboard/assets/loginsystem2/otp/');
+
 }
 ?>
 <html>
